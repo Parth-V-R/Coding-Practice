@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumeven(...values)
+        {
+            var s=0
+            for (n of values)
+            {
+                if(n%2==0)
+                s=s+n
+            }
+            document.write("Sum of even numbers is "+s)
+
+        }
+        sumeven(10,20,5,30,1,40)
+    </script>
+</body>
+</html>
