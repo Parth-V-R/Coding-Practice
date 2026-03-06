@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var worker1={
+            name:"Raja",
+            wages:500,
+            wdays:5
+        }
+
+        var worker2={
+            name:"Gaja",
+            wages:750,
+            wdays:2
+        }
+
+        var Payment1=worker1.wages*worker1.wdays
+        var Payment2=worker2.wages*worker2.wdays
+        var Total_Payment=Payment1+Payment2
+
+
+        document.write(`Name is ${worker1.name},<br>Wages is ${worker1.wages},<br>Wdays are ${worker1.wdays},<br>Payment is ${Payment1}<br>`)
+
+        
+
+        document.write(`<br>Name is ${worker2.name},<br>Wages is ${worker2.wages},<br>Wdays are ${worker2.wdays},<br>Payment is ${Payment2}<br>`)
+        document.write("<br>Total Payment is "+Total_Payment)
+    </script>
+</body>
+</html>
