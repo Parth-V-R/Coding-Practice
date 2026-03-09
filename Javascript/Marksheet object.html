@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var marksheet={
+            rollno:4117,
+            name:"Parth Rajurkar",
+            eng:45,hin:55,mar:50,mat:85,sci:70,
+            showdata:function(){
+                document.write(`RollNo is ${this.rollno}<br>Name is ${this.name}<br>`)
+            },
+            total:function(){
+                let T=this.eng+this.hin+this.mar+this.mat+this.sci
+                document.write(`Total Marks are ${T}`)
+            }
+        }
+        marksheet.showdata()
+        marksheet.total()
+    </script>
+</body>
+</html>
