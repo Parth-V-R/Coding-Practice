@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var rectangle={
+            length:10,
+            breadth:20,
+            area:function()
+            {
+               a=this.length*this.breadth
+                return a
+            },
+            perimeter:function()
+            {
+                p=2*(this.length+this.breadth)
+                return p
+            }
+        }
+        document.write(`Length is ${rectangle.length}<br>Breadth is ${rectangle.breadth}<br>Area is ${rectangle.area()}<br>Perimeter is ${rectangle.perimeter()}`)
+    </script>
+</body>
+</html>
