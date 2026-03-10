@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function set(a,b,c)
+        {
+            this.n1=a
+            this.n2=b
+            this.n3=c
+
+        this.sum=function()
+        {
+            var s=this.n1+this.n2+this.n3
+            document.write(`Sum is ${s}<br>`)
+        }
+        this.mean=function()
+        {
+            var m=(this.n1+this.n2+this.n3)/3
+            document.write("Mean is "+m+"<br>")
+        }
+        }
+        var set1=new set(5,3,2)
+        set1.sum()
+        set1.mean()
+        var set2=new set(10,3,7)
+        set2.sum()
+        set2.mean()
+    </script>
+</body>
+</html>
