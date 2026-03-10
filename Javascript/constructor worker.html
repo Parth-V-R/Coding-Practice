@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Worker(n,w,d)
+        {
+            this.name=n
+            this.wages=w
+            this.wdays=d
+            this.showdata=function()
+            {
+                document.write(`Name is ${this.name}<br>Wages is ${this.wages}<br>Wdays are ${this.wdays}<br>`)
+            }
+            this.payment=function(){
+                var p=this.wages*this.wdays
+                document.write("Payment is "+p+"<br><br>")
+            }
+        }
+        var worker1=new Worker("Amit",500,5)
+        worker1.showdata()
+        worker1.payment()
+        var worker2=new Worker("Gopal",800,2)
+        worker2.showdata()
+        worker2.payment()
+    </script>
+</body>
+</html>
