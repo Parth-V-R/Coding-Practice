@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class worker
+        {
+            constructor(n,w,d)
+            {
+                this.name=n
+                this.wages=w
+                this.wdays=d
+            }
+            showdata()
+            {
+                document.write(`Name is ${this.name}<br>Wages is ${this.wages}<br>Wdays are ${this.wdays}<br>`)
+            }
+            payment()
+            {
+                let p=this.wages*this.wdays
+                document.write(`Payment is ${p}`)
+            }
+        }
+        var w=new worker("Ramesh",500,5)
+        w.showdata()
+        w.payment()
+    </script>
+</body>
+</html>
