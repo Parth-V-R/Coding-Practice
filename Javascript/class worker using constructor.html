@@ -17,17 +17,20 @@
             }
             showdata()
             {
-                document.write(`Name is ${this.name}<br>Wages is ${this.wages}<br>Wdays are ${this.wdays}<br>`)
+                document.write(`<br>Name is ${this.name}<br>Wages is ${this.wages}<br>Wdays are ${this.wdays}<br>`)
             }
             payment()
             {
                 let p=this.wages*this.wdays
-                document.write(`Payment is ${p}`)
+                document.write(`Payment is ${p}<br>`)
             }
         }
         var w=new worker("Ramesh",500,5)
         w.showdata()
         w.payment()
+        var a=new worker("Raja",700,7)
+        a.showdata()
+        a.payment()
     </script>
 </body>
 </html>
