@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class worker
+        {
+            constructor(n,w,d)
+            {
+                this.name=n
+                this.wages=w
+                this.wdays=d
+            }
+            payment()
+            {
+                var p=this.wages*this.wdays
+                return p
+            }
+        }
+        var arr=[
+        new worker("Amit",500,5),
+        new worker("Sumit",700,5),
+        new worker("Gopal",300,9),
+        new worker("Raj",400,2)
+        ]
+        var s=0
+        for(item of arr)
+        {
+            document.write(`Name is ${item.name}<br>`)
+            document.write(`Wages is ${item.wages}<br>`)
+            document.write(`Wdays is ${item.wdays}<br>`)
+            document.write(`Payment is ${item.payment()}<br><hr>`)
+            s=s+item.payment()
+        }
+        document.write(`Total Payment is ${s}`)
+    </script>
+</body>
+</html>
