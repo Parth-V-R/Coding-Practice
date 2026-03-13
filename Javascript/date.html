@@ -8,7 +8,14 @@
 <body>
     <script>
         var cdate=new Date()
-        document.write(`Current date is ${cdate}`)
+        var d=cdate.getDate()
+        var m=cdate.getMonth()
+        var y=cdate.getFullYear()
+        var h=cdate.getHours()
+        var mn=cdate.getMinutes()
+        var s=cdate.getSeconds()
+        document.write(`Current date is ${d}-${m}-${y}`)
+        document.write(`<br>Time: ${h%12}:${mn}:${s}`)
     </script>
 </body>
 </html>
