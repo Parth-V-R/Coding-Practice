@@ -28,14 +28,17 @@
         new worker("Raj",400,2)
         ]
         var s=0
-        for(item of arr)
-        {
-            document.write(`Name is ${item.name}<br>`)
-            document.write(`Wages is ${item.wages}<br>`)
-            document.write(`Wdays is ${item.wdays}<br>`)
-            document.write(`Payment is ${item.payment()}<br><hr>`)
-            s=s+item.payment()
-        }
+        document.write("<table border=1>")
+            document.write("<tr><th>Name</th><th>Wages</th><th>Wdays</th><th>Payment</th></tr>")
+            for(item of arr)
+            {
+                document.write(`<tr><td>${item.name}</td>`)
+                document.write(`<td>${item.wages}</td>`)
+                document.write(`<td>${item.wdays}</td>`)
+                document.write(`<td>${item.payment()}</td></tr>`)
+                s=s+item.payment()
+            }
+            document.write("</table>")
         document.write(`Total Payment is ${s}`)
     </script>
 </body>
