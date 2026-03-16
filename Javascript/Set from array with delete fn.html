@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myset=new Set(['Amit','Sumit','Gopal','Babu'])
+        var name=prompt("Enter Value to Remove")
+        var result=myset.delete(name)
+        if(result)
+            document.write("Value Removed")
+        else
+            document.write("Value not Removed")
+        myset.forEach((item)=>{
+            document.write("<br>"+item+" ")
+        })
+    </script>
+</body>
+</html>
