@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <img src="" id="image" height="150" width="200">
+        <br>
+        <button onclick="ChangeNext()">Next</button>
+    </body>
+</html>
+<script>
+    var img=document.getElementById('image')
+    var arr=["india.png","russia.png","israel.png","japan.png"]
+    var c=0
+    function ChangeNext(){
+        img.src=arr[c]
+        c++
+        if(c>3)
+        c=0
+    }
+</script>
