@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <h1>INDIA</h1>
+       <button onclick="start()">Start</button> 
+       <button onclick="stop()">Stop</button> 
+       <br>
+    </body>
+</html>
+<script>
+    function start()
+    {
+        var h1=document.querySelector("h1")
+        h1.style.animation="slide 3s infinite"
+    }
+    function stop()
+    {
+        var h1=document.querySelector("h1")
+        h1.style.animation=""
+    }
+</script>
+<style>
+    @keyframes slide {
+        from{
+            transform: translateX(0px);
+        }
+        to{
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        
+    }
+</style>
