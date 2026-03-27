@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <button onclick="changestyle('color')">Color</button>
+        <button onclick="changestyle('bw')">Black&White</button>
+        <br>
+        <img src="images/modi.png" height="200">
+    </body>
+</html>
+<script>
+    function changestyle(data)
+    {
+        var img=document.querySelector("img")
+        if(data=="color")
+        img.style.filter="grayscale(0%)"
+        if(data=="bw")
+        img.style.filter="grayscale(100%)"
+    }
+</script>
+<style>
+    img{
+        border: solid 8px white;
+        box-shadow: 0px 0px 5px 1px grey;
+        height: 500x;
+        width: 300px;
+    }
+</style>
