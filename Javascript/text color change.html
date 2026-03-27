@@ -1,0 +1,25 @@
+<html>
+    <body>
+       <h1>INDIA</h1> 
+       <button onclick="changestyle('orange')">Orange</button>
+       <button onclick="changestyle('red')">Red</button>
+       <br>
+    </body>
+</html>
+
+<script>
+    function changestyle(data)
+    {
+        var h1=document.querySelector("h1")
+        if(data=="orange")
+            h1.style.color="orange"
+        if(data=="red")
+            h1.style.color="red"
+    }
+</script>
+
+<style>
+    h1{
+        border: solid 8px white;
+    }
+</style>
